@@ -5,6 +5,7 @@ import it.develhope.dragonball.entities.attacks.PhysicalAttack;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Character {
 
@@ -32,7 +33,7 @@ public class Character {
         } else {
             throw new RuntimeException("Dodge Rate must be between 0 and 1");
         }
-        attackList.add(new PhysicalAttack(strength));
+        attackList.add(new PhysicalAttack(strength, dodgeRate));
         System.out.printf("%s is ready to fight%n", this.name);
     }
 
@@ -62,12 +63,14 @@ public class Character {
 
     public List<Attack> getAttackList() { return attackList; }
 
-    /*public Attack choseAttack() {
-        return attackList.get((int)(Math.random() * attackList.size()));
-    }*/
+    public Attack choseAttack() {
+        Random random = new Random();
+        int choice = random.nextInt(0, 5);
+        return attackList.get(choice);
+    }
 
     public int attack(Character characterEnemy) {
-        Attack attack = attackList.get((int)(Math.random() * attackList.size()));
+        Attack attack = this.choseAttack();
         double success = attack.getSuccessRate() * characterEnemy.getDodgeRate();
         if((Math.random() + 0.01) <= success) {
             int damage = (int) (attack.getStrength() * characterEnemy.getDefenceRate());

@@ -2,22 +2,26 @@ package it.develhope.dragonball.entities;
 
 import it.develhope.dragonball.utilities.Logger;
 
+import java.util.Random;
+
 public class Combat {
 
     private final Character character1;
     private final Character character2;
-    private static int fightNumber = 0;
 
     public Combat(Character character1, Character character2) {
         this.character1 = character1;
         this.character2 = character2;
     }
 
+
+
     public void fight() {
-        double choice = Math.random();
+        Random random = new Random();
+        boolean coin = random.nextBoolean();
         Character firstAttacker;
         Character secondAttacker;
-        if(choice <= 0.5) {
+        if(coin) {
             firstAttacker = character1;
             secondAttacker = character2;
         } else {
@@ -43,8 +47,8 @@ public class Combat {
         }
 
         Logger.write(
-                firstAttacker.getName() + " Vs " + secondAttacker.getName() + "\n"
-                + winner.getName() + " Wins\n" + loser.getName() + " Lost\n\n"
+                firstAttacker.getName() + " Vs " + secondAttacker.getName() + "\t\t|\t\t"
+                + "WIN: " + winner.getName() + "\n"
         );
 
         System.out.println("------------------------------------");

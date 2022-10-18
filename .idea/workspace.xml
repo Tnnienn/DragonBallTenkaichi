@@ -4,34 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e424786-0cf8-442e-89cf-e64501a90eeb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DragonBall.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Combat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Races.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Attack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/BigBangAttack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Genkidama.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Kaioken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Kamehameha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Makankosappo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Masenko.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/PhysicalAttack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Taioken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/utilities/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/traccia.txt" afterDir="false" />
+    <list default="true" id="2e424786-0cf8-442e-89cf-e64501a90eeb" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Combat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/BigBangAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/BigBangAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Genkidama.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Genkidama.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Kaioken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Kaioken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Kamehameha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Kamehameha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Makankosappo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Makankosappo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Masenko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Masenko.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/PhysicalAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/PhysicalAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Taioken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Taioken.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,6 +94,14 @@
       <option name="presentableId" value="Default" />
       <updated>1663778486022</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1663866331379</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663866331379</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,5 +114,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>
