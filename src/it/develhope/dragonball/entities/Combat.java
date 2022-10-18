@@ -2,14 +2,18 @@ package it.develhope.dragonball.entities;
 
 import it.develhope.dragonball.utilities.Logger;
 
+import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Random;
 
 public class Combat {
 
-    private final Character character1;
-    private final Character character2;
+    private Character character1;
+    private Character character2;
+    private String path;
 
-    public Combat(Character character1, Character character2) {
+    public Combat(Character character1, Character character2, String path) {
         this.character1 = character1;
         this.character2 = character2;
     }
@@ -17,6 +21,8 @@ public class Combat {
 
 
     public void fight() {
+        StringBuilder result = new StringBuilder();
+        result.append(character1.getName()).append(" VS ").append(character2.getName()).append("\n");
         Random random = new Random();
         boolean coin = random.nextBoolean();
         Character firstAttacker;
@@ -31,9 +37,9 @@ public class Combat {
         int lifePointFirstAttacker = firstAttacker.getLifePoint();
         int lifePointSecondAttacker = secondAttacker.getLifePoint();
         while(lifePointFirstAttacker > 0 && lifePointSecondAttacker > 0) {
-            int damageFirstAttacker = firstAttacker.attack(secondAttacker);
+            int damageFirstAttacker = firstAttacker.attack(secondAttacker, result);
             lifePointSecondAttacker -= damageFirstAttacker;
-            int damageSecondAttacker = secondAttacker.attack(firstAttacker);
+            int damageSecondAttacker = secondAttacker.attack(firstAttacker, result);
             lifePointFirstAttacker -= damageSecondAttacker;
         }
         Character winner;
@@ -46,16 +52,16 @@ public class Combat {
             loser = secondAttacker;
         }
 
-        Logger.write(
-                firstAttacker.getName() + " Vs " + secondAttacker.getName() + "\t\t|\t\t"
-                + "WIN: " + winner.getName() + "\n"
-        );
-
-        System.out.println("------------------------------------");
+        System.out.println("----------------------------------");
         System.out.printf("\t\t\t%s Wins%n", winner.getName());
-        System.out.printf("\t\t\t%s Lost%n", loser.getName());
-        System.out.println("------------------------------------");
+        System.out.println("----------------------------------");
 
-
+        result.append("----------------------------------\n\t\t\t").append(winner.getName()).append("----------------------------------\n");
+        //TODO fix file logging
+        /*try (BufferedWriter bw = new BufferedWriter(new FileWriter(Paths.get(path).toFile()))){
+            bw.write(result.toString());
+        } catch (IOException e) {
+            System.out.println(e);
+        }*/
     }
 }

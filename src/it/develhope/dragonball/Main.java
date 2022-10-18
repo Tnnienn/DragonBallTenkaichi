@@ -32,12 +32,12 @@ public class Main {
         krilin.getAttackList().add(new Genkidama());
         krilin.getAttackList().add(new Taioken());
 
-        Combat combat1 = new Combat(goku, vegeta);
-        Combat combat2 = new Combat(goku, krilin);
-        Combat combat3 = new Combat(goku, piccolo);
-        Combat combat4 = new Combat(vegeta, piccolo);
-        Combat combat5 = new Combat(vegeta, krilin);
-        Combat combat6 = new Combat(piccolo, krilin);
+        Combat combat1 = new Combat(goku, vegeta, "results/goku-vegeta.txt");
+        Combat combat2 = new Combat(goku, krilin, "results/goku-krilin.txt");
+        Combat combat3 = new Combat(goku, piccolo, "results/goku-piccolo.txt");
+        Combat combat4 = new Combat(vegeta, piccolo, "results/vegeta-piccolo.txt");
+        Combat combat5 = new Combat(vegeta, krilin, "results/vegeta-krilin.txt");
+        Combat combat6 = new Combat(piccolo, krilin, "results/piccolo-krilin.txt");
 
         new Thread(combat1::fight).start();
         new Thread(combat2::fight).start();

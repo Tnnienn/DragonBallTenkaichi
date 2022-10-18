@@ -69,16 +69,18 @@ public class Character {
         return attackList.get(choice);
     }
 
-    public int attack(Character characterEnemy) {
+    public int attack(Character characterEnemy, StringBuilder result) {
         Attack attack = this.choseAttack();
         double success = attack.getSuccessRate() * characterEnemy.getDodgeRate();
         if((Math.random() + 0.01) <= success) {
             int damage = (int) (attack.getStrength() * characterEnemy.getDefenceRate());
             System.out.printf("%s:\"Ouch!!\"%n", characterEnemy.getName());
+            result.append(characterEnemy.getName()).append(": \"Ouch!!\"").append("\n");
             System.out.println();
             return damage;
         } else {
             System.out.printf("%s:\"Dodge!!\"%n", characterEnemy.getName());
+            result.append(characterEnemy.getName()).append(": \"Dodge!!\"").append("\n");
             System.out.println();
             return 0;
         }
