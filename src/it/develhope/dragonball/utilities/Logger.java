@@ -12,7 +12,6 @@ public class Logger {
         try{
             if(!log.exists()){
                 System.out.println("We had to make a new file.");
-                log.createNewFile();
             }
             PrintWriter out = new PrintWriter(new FileWriter(log, true));
             out.append(s);

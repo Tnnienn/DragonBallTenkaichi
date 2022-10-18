@@ -15,22 +15,22 @@ public class Main {
         goku.getAttackList().add(new Taioken());
 
         Character vegeta = new Character("Vegeta", Races.Sayan, 999, 99, 0.31, 0.69);
-        goku.getAttackList().add(new Kaioken());
-        goku.getAttackList().add(new Kamehameha());
-        goku.getAttackList().add(new Genkidama());
-        goku.getAttackList().add(new BigBangAttack());
+        vegeta.getAttackList().add(new Kaioken());
+        vegeta.getAttackList().add(new Kamehameha());
+        vegeta.getAttackList().add(new Genkidama());
+        vegeta.getAttackList().add(new BigBangAttack());
 
         Character piccolo = new Character("Piccolo", Races.Nameccian, 870, 85, 0.4, 0.65);
-        goku.getAttackList().add(new Kaioken());
-        goku.getAttackList().add(new Makankosappo());
-        goku.getAttackList().add(new Taioken());
-        goku.getAttackList().add(new BigBangAttack());
+        piccolo.getAttackList().add(new Kaioken());
+        piccolo.getAttackList().add(new Makankosappo());
+        piccolo.getAttackList().add(new Taioken());
+        piccolo.getAttackList().add(new BigBangAttack());
 
         Character krilin = new Character("Krilin", Races.Human, 600, 60, 0.50, 0.55);
-        goku.getAttackList().add(new Kaioken());
-        goku.getAttackList().add(new Kamehameha());
-        goku.getAttackList().add(new Genkidama());
-        goku.getAttackList().add(new Taioken());
+        krilin.getAttackList().add(new Kaioken());
+        krilin.getAttackList().add(new Kamehameha());
+        krilin.getAttackList().add(new Genkidama());
+        krilin.getAttackList().add(new Taioken());
 
         Combat combat1 = new Combat(goku, vegeta);
         Combat combat2 = new Combat(goku, krilin);
