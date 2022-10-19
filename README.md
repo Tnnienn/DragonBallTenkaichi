@@ -32,8 +32,8 @@ dell’avversario(quindi più questo valore per un personaggio è vicino allo 0 
 vicino ad 1 meno è resistente). Ad esempio, se Goku riesce ad infliggere un attacco “Kamehameha”
 a Majin-Bu che infligge 50 danni, se Majin-Bu ha una resistenza pari a 0.3 il danno inflitto sarà
 50*0.3 = 15.
-- Il combattimento termina quando uno dei due personaggi raggiungerà un numero di punti vita <=
-0. In tal caso il combattimento finisce e i punti vita dei personaggi vengono ripristinati al massimo.
+- Il combattimento termina quando uno dei due personaggi raggiungerà un numero di punti vita <= 0. 
+In tal caso il combattimento finisce e i punti vita dei personaggi vengono ripristinati al massimo.
 Ogni combattimento dovrà essere eseguito su un thread differente. Questo per fare in modo di
 poter fare più combattimenti alla volta in parallelo.
 Creare una classe Main dove vengano creati dei personaggi, degli attacchi, e vengano simulati
