@@ -1,10 +1,8 @@
 package it.develhope.dragonball.entities;
 
-import it.develhope.dragonball.utilities.Logger;
-
-import java.io.*;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Random;
 
 public class Combat {
@@ -16,6 +14,7 @@ public class Combat {
     public Combat(Character character1, Character character2, String path) {
         this.character1 = character1;
         this.character2 = character2;
+        this.path = path;
     }
 
 
@@ -56,12 +55,12 @@ public class Combat {
         System.out.printf("\t\t\t%s Wins%n", winner.getName());
         System.out.println("----------------------------------");
 
-        result.append("----------------------------------\n\t\t\t").append(winner.getName()).append("----------------------------------\n");
-        //TODO fix file logging
-        /*try (BufferedWriter bw = new BufferedWriter(new FileWriter(Paths.get(path).toFile()))){
+        result.append("----------------------------------\n\t\t\t").append(winner.getName()).append("\n----------------------------------\n");
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
             bw.write(result.toString());
         } catch (IOException e) {
             System.out.println(e);
-        }*/
+        }
     }
 }

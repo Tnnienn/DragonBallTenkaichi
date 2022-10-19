@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e424786-0cf8-442e-89cf-e64501a90eeb" name="Changes" comment="Update: fixed bug in main">
+    <list default="true" id="2e424786-0cf8-442e-89cf-e64501a90eeb" name="Changes" comment="Update: fixed battle logger in Comnat.fight() method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Combat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/utilities/Logger.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666100024599</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update: tried to implement new logging system">
+      <created>1666102195335</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666102195335</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update: fixed battle logger in Comnat.fight() method">
+      <created>1666190390749</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666190390749</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +148,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Update: structural changes" />
     <MESSAGE value="Update: fixed bug in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: fixed bug in main" />
+    <MESSAGE value="Update: tried to implement new logging system" />
+    <MESSAGE value="Update: fixed battle logger in Comnat.fight() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: fixed battle logger in Comnat.fight() method" />
   </component>
 </project>
