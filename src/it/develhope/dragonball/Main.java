@@ -46,7 +46,6 @@ public class Main {
         new Thread(combat5::fight).start();
         new Thread(combat6::fight).start();
 
-        System.out.println("Ciao");
 
     }
 }
