@@ -53,9 +53,11 @@ public class Combat {
 
         System.out.println("----------------------------------");
         System.out.printf("\t\t\t%s Wins%n", winner.getName());
+        System.out.printf("\t\t\t%s Lost%n", loser.getName());
         System.out.println("----------------------------------");
 
         result.append("----------------------------------\n\t\t\t").append(winner.getName()).append(" Wins\n----------------------------------\n");
+        result.append("----------------------------------\n\t\t\t").append(loser.getName()).append(" Lost\n----------------------------------\n");
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
             bw.write(result.toString());
