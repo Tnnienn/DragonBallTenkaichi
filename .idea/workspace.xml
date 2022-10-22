@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e424786-0cf8-442e-89cf-e64501a90eeb" name="Changes" comment="Update: tried to implement new logging system" />
+    <list default="true" id="2e424786-0cf8-442e-89cf-e64501a90eeb" name="Changes" comment="Update: bug fix">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Combat.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666102195335</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update: bug fix">
+      <created>1666453838899</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666453838899</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update: bug fix">
+      <created>1666367711387</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666367711387</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,7 +139,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -138,6 +156,7 @@
     <MESSAGE value="Update: structural changes" />
     <MESSAGE value="Update: fixed bug in main" />
     <MESSAGE value="Update: tried to implement new logging system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: tried to implement new logging system" />
+    <MESSAGE value="Update: bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: bug fix" />
   </component>
 </project>
