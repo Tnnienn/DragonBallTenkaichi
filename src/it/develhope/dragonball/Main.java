@@ -1,51 +1,46 @@
 package it.develhope.dragonball;
 
-import it.develhope.dragonball.entities.Races;
-import it.develhope.dragonball.entities.attacks.*;
-import it.develhope.dragonball.entities.Character;
-import it.develhope.dragonball.entities.Combat;
+import it.unibas.utilita.Console;
 
 public class Main {
 
     public static void main(String[] args) throws RuntimeException{
-        Character goku = new Character("Goku", Races.Sayan, 1000, 100, 0.3, 0.7);
-        goku.getAttackList().add(new Kaioken());
-        goku.getAttackList().add(new Kamehameha());
-        goku.getAttackList().add(new Genkidama());
-        goku.getAttackList().add(new Taioken());
+        new Main().run();
+    }
 
-        Character vegeta = new Character("Vegeta", Races.Sayan, 999, 99, 0.31, 0.69);
-        vegeta.getAttackList().add(new Kaioken());
-        vegeta.getAttackList().add(new Kamehameha());
-        vegeta.getAttackList().add(new Genkidama());
-        vegeta.getAttackList().add(new BigBangAttack());
-
-        Character piccolo = new Character("Piccolo", Races.Nameccian, 870, 85, 0.4, 0.65);
-        piccolo.getAttackList().add(new Kaioken());
-        piccolo.getAttackList().add(new Makankosappo());
-        piccolo.getAttackList().add(new Taioken());
-        piccolo.getAttackList().add(new BigBangAttack());
-
-        Character krilin = new Character("Krilin", Races.Human, 600, 60, 0.50, 0.55);
-        krilin.getAttackList().add(new Kaioken());
-        krilin.getAttackList().add(new Kamehameha());
-        krilin.getAttackList().add(new Genkidama());
-        krilin.getAttackList().add(new Taioken());
-
-        Combat combat1 = new Combat(goku, vegeta, "results/goku-vegeta.txt");
-        Combat combat2 = new Combat(goku, krilin, "results/goku-krilin.txt");
-        Combat combat3 = new Combat(goku, piccolo, "results/goku-piccolo.txt");
-        Combat combat4 = new Combat(vegeta, piccolo, "results/vegeta-piccolo.txt");
-        Combat combat5 = new Combat(vegeta, krilin, "results/vegeta-krilin.txt");
-        Combat combat6 = new Combat(piccolo, krilin, "results/piccolo-krilin.txt");
-
-        new Thread(combat1::fight).start();
-        new Thread(combat2::fight).start();
-        new Thread(combat3::fight).start();
-        new Thread(combat4::fight).start();
-        new Thread(combat5::fight).start();
-        new Thread(combat6::fight).start();
+    private void run() {
+        while (true) {
+            int choice = menu();
+            if (choice == 0) {
+                System.out.println("It's been a pleasure!!");
+                return;
+            }
+        }
+    }
 
 
+    private int menu() {
+        System.out.println("|-------Dragon Ball Tenkaichi Tournament-------|");
+        System.out.println("| 1. Create Character                          |");
+        System.out.println("| 2. List Characters                           |");
+        System.out.println("| 3. Delete Character                          |");
+        System.out.println("| 4. 1 Vs 1 Battle                             |");
+        System.out.println("| 5. Save Characters on file                   |");
+        System.out.println("| 6. Load Characters from file                 |");
+        System.out.println("|                                              |");
+        System.out.println("| 0. Exit                                      |");
+        System.out.println("|----------------------------------------------|");
+        return readLimitedInteger(0, 6, "Insert your choice --> ");
+    }
+
+    private int readLimitedInteger(int min, int max, String msg) {
+        System.out.print(msg);
+        int value = Console.leggiIntero();
+        while (value < min || value > max) {
+            System.out.printf("***Error insert a number between %d and %d***%n", min, max);
+            System.out.print(msg);
+            value = Console.leggiIntero();
+        }
+        return value;
     }
 }
