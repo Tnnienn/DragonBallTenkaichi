@@ -1,4 +1,6 @@
-package it.develhope.dragonball.entities;
+package it.develhope.dragonball.combat;
+
+import it.develhope.dragonball.characters.Character;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

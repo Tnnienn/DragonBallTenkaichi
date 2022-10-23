@@ -1,4 +1,4 @@
-package it.develhope.dragonball.entities;
+package it.develhope.dragonball.characters;
 
 public enum Races {
     Human,

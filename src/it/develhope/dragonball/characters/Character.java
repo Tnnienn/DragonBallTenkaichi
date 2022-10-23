@@ -1,21 +1,21 @@
-package it.develhope.dragonball.entities;
+package it.develhope.dragonball.characters;
 
-import it.develhope.dragonball.entities.attacks.Attack;
-import it.develhope.dragonball.entities.attacks.PhysicalAttack;
+import it.develhope.dragonball.attacks.Attack;
+import it.develhope.dragonball.attacks.PhysicalAttack;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Character {
+public abstract class Character {
 
-    private String name;
-    private Races race;
-    private int lifePoint;
-    private int strength;
-    private double defenceRate;
-    private double dodgeRate;
-    private List<Attack> attackList = new ArrayList<>(5);
+    protected String name;
+    protected Races race;
+    protected int lifePoint;
+    protected int strength;
+    protected double defenceRate;
+    protected double dodgeRate;
+    protected List<Attack> attackList = new ArrayList<>(5);
 
 
     public Character(String name, Races race, int lifePoint, int strength, double defenceRate, double dodgeRate) throws RuntimeException{
@@ -35,6 +35,10 @@ public class Character {
         }
         attackList.add(new PhysicalAttack(strength, dodgeRate));
         System.out.printf("%s is ready to fight%n", this.name);
+    }
+
+    public Character() {
+
     }
 
     public String getName() {
