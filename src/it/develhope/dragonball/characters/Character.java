@@ -88,4 +88,15 @@ public abstract class Character {
         }
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Name: ").append(this.name).append("\n");
+        sb.append("Race: ").append(this.race).append("\n");
+        sb.append("Life Points: ").append(this.lifePoint).append("\n");
+        sb.append("Strength: ").append(this.strength).append("\n");
+        sb.append("Defence Rate: ").append(this.defenceRate).append("\n");
+        sb.append("Dodge Rate: ").append(this.dodgeRate).append("\n");
+        return sb.toString().trim();
+    }
 }

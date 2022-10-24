@@ -15,5 +15,6 @@ public class Vegeta extends Character{
         this.attackList.add(new BigBangAttack());
         this.attackList.add(new GalickCannon());
         this.attackList.add(new FinalFlash());
+        this.attackList.add(new Makankosappo());
     }
 }

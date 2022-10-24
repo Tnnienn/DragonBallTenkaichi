@@ -1,9 +1,6 @@
 package it.develhope.dragonball.characters;
 
-import it.develhope.dragonball.attacks.Genkidama;
-import it.develhope.dragonball.attacks.Kaioken;
-import it.develhope.dragonball.attacks.Kamehameha;
-import it.develhope.dragonball.attacks.PhysicalAttack;
+import it.develhope.dragonball.attacks.*;
 
 public class Goku extends Character{
 
@@ -18,5 +15,6 @@ public class Goku extends Character{
         this.attackList.add(new Kamehameha());
         this.attackList.add(new Kaioken());
         this.attackList.add(new Genkidama());
+        this.attackList.add(new Taioken());
     }
 }

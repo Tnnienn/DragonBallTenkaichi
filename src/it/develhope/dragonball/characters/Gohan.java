@@ -15,5 +15,6 @@ public class Gohan extends Character{
         this.attackList.add(new Kamehameha());
         this.attackList.add(new Masenko());
         this.attackList.add(new Taioken());
+        this.attackList.add(new Kaioken());
     }
 }

@@ -5,24 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e424786-0cf8-442e-89cf-e64501a90eeb" name="Changes" comment="Update: battle logs are now cleaner">
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/FinalFlash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/GalickCannon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Goku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Vegeta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/CharacterSelector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/combat/Combat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Races.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Races.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Attack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/BigBangAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/BigBangAttack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Genkidama.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Genkidama.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Kaioken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Kaioken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Kamehameha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Kamehameha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Makankosappo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Makankosappo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Masenko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Masenko.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/PhysicalAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/PhysicalAttack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/attacks/Taioken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Taioken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/goku-krilin.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/goku-piccolo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/goku-vegeta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/piccolo-krilin.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/vegeta-krilin.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/vegeta-piccolo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Gohan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Gohan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Goku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Goku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Vegeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Vegeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/combat/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/combat/Combat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,17 +56,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tnnienn/lib/utilita.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/tnnienn/lib/utilita.jar",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="it.develhope.dragonball.attacks" />

@@ -67,4 +67,12 @@ public class Combat {
             System.out.println(e);
         }
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Character 1: \n").append(this.character1).append("\n");
+        sb.append("Character 2: \n").append(this.character2).append("\n");
+        return sb.toString().trim();
+    }
 }
