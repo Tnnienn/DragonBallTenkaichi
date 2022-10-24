@@ -1,4 +1,4 @@
-package it.develhope.dragonball.entities.attacks;
+package it.develhope.dragonball.attacks;
 
 public class BigBangAttack extends Skill {
 

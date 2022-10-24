@@ -1,51 +1,113 @@
 package it.develhope.dragonball;
 
-import it.develhope.dragonball.entities.Races;
-import it.develhope.dragonball.entities.attacks.*;
-import it.develhope.dragonball.entities.Character;
-import it.develhope.dragonball.entities.Combat;
+import it.develhope.dragonball.characters.Character;
+import it.develhope.dragonball.characters.CharacterSelector;
+import it.develhope.dragonball.combat.Combat;
+import it.unibas.utilita.Console;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Objects;
 
 public class Main {
 
-    public static void main(String[] args) throws RuntimeException{
-        Character goku = new Character("Goku", Races.Sayan, 1000, 100, 0.3, 0.7);
-        goku.getAttackList().add(new Kaioken());
-        goku.getAttackList().add(new Kamehameha());
-        goku.getAttackList().add(new Genkidama());
-        goku.getAttackList().add(new Taioken());
+    public static void main(String[] args) {
+        new Main().run();
+    }
 
-        Character vegeta = new Character("Vegeta", Races.Sayan, 999, 99, 0.31, 0.69);
-        vegeta.getAttackList().add(new Kaioken());
-        vegeta.getAttackList().add(new Kamehameha());
-        vegeta.getAttackList().add(new Genkidama());
-        vegeta.getAttackList().add(new BigBangAttack());
+    private void run() {
+        CharacterSelector characterSelector = CharacterSelector.getInstance();
+        Combat combat = null;
+        while (true) {
+            int choice = menu();
+            if (choice == 0) {
+                System.out.println("It's been a pleasure!!");
+                return;
+            }
+            if (choice == 1) {
+               combat = selectCharacter(characterSelector);
+            }
+            if (choice == 2) {
+                characterSelector.printCharacterList();
+            }
+            if (choice == 3) {
+                listSelectedCharacters(combat);
+            }
+            if (choice == 4) {
+                startBattle(combat);
+            }
+            if (choice == 5) {
+                combat = null;
+                System.out.println("***Battle Successfully Reset***");
+            }
+        }
+    }
 
-        Character piccolo = new Character("Piccolo", Races.Nameccian, 870, 85, 0.4, 0.65);
-        piccolo.getAttackList().add(new Kaioken());
-        piccolo.getAttackList().add(new Makankosappo());
-        piccolo.getAttackList().add(new Taioken());
-        piccolo.getAttackList().add(new BigBangAttack());
+    private int menu() {
+        System.out.println("|-------Dragon Ball Tenkaichi Tournament-------|");
+        System.out.println("| 1. Select Characters                         |");
+        System.out.println("| 2. List All Characters                       |");
+        System.out.println("| 3. List Selected Characters                  |");
+        System.out.println("| 4. Start  Battle                             |");
+        System.out.println("| 5. Reset Battle                              |");
+        System.out.println("|                                              |");
+        System.out.println("| 0. Exit                                      |");
+        System.out.println("|----------------------------------------------|");
+        return readLimitedInteger(0, 5, "Insert your choice --> ");
+    }
 
-        Character krilin = new Character("Krilin", Races.Human, 600, 60, 0.50, 0.55);
-        krilin.getAttackList().add(new Kaioken());
-        krilin.getAttackList().add(new Kamehameha());
-        krilin.getAttackList().add(new Genkidama());
-        krilin.getAttackList().add(new Taioken());
+    private void startBattle(Combat combat) {
+        if (combatIsEmpty(combat)) {
+            System.out.println("***Error Select Characters first***");
+            return;
+        }
+        combat.fight();
+    }
 
-        Combat combat1 = new Combat(goku, vegeta, "results/goku-vegeta.txt");
-        Combat combat2 = new Combat(goku, krilin, "results/goku-krilin.txt");
-        Combat combat3 = new Combat(goku, piccolo, "results/goku-piccolo.txt");
-        Combat combat4 = new Combat(vegeta, piccolo, "results/vegeta-piccolo.txt");
-        Combat combat5 = new Combat(vegeta, krilin, "results/vegeta-krilin.txt");
-        Combat combat6 = new Combat(piccolo, krilin, "results/piccolo-krilin.txt");
+    private void listSelectedCharacters(Combat combat) {
+        if (combatIsEmpty(combat)) {
+            System.out.println("***Error Select Characters first***");
+            return;
+        }
+        System.out.println(combat);
+    }
 
-        new Thread(combat1::fight).start();
-        new Thread(combat2::fight).start();
-        new Thread(combat3::fight).start();
-        new Thread(combat4::fight).start();
-        new Thread(combat5::fight).start();
-        new Thread(combat6::fight).start();
+    private boolean combatIsEmpty(Combat combat) {
+        return combat == null;
+    }
+
+    private Combat selectCharacter(CharacterSelector characterSelector) {
+        characterSelector.printCharacterList();
+        int firstCharacter = readLimitedInteger(0, characterSelector.size(), "Insert your choice --> ");
+        System.out.println();
+        characterSelector.printCharacterList();
+        int secondCharacter = readLimitedInteger(0, characterSelector.size(), "Insert your choice --> ");
+        String path = readPath();
+        return new Combat(characterSelector.getCharacter(firstCharacter), characterSelector.getCharacter(secondCharacter), path);
+    }
+
+    private String readPath() {
+        System.out.print("Name the file where the battle log is saved --> ");
+        String path = Console.leggiStringa();
+        StringBuilder fullPath = new StringBuilder("results/" + path + ".txt");
+        if (Objects.equals(path, "")) {
+            fullPath.replace(0, fullPath.length(), "results/default.txt");
+        }
+        if (Files.exists(Path.of(fullPath.toString()))) {
+            fullPath.insert(fullPath.indexOf(".txt"), "-copy");
+        }
+        return fullPath.toString().trim();
+    }
 
 
+    private int readLimitedInteger(int min, int max, String msg) {
+        System.out.print(msg);
+        int value = Console.leggiIntero();
+        while (value < min || value > max) {
+            System.out.printf("***Error insert a number between %d and %d***%n", min, max);
+            System.out.print(msg);
+            value = Console.leggiIntero();
+        }
+        return value;
     }
 }

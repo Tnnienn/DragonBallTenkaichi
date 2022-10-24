@@ -1,4 +1,4 @@
-package it.develhope.dragonball.entities.attacks;
+package it.develhope.dragonball.attacks;
 
 public abstract class Skill implements Attack {
 

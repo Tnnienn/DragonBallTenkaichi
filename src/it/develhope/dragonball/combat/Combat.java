@@ -1,4 +1,6 @@
-package it.develhope.dragonball.entities;
+package it.develhope.dragonball.combat;
+
+import it.develhope.dragonball.characters.Character;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -64,5 +66,13 @@ public class Combat {
         } catch (IOException e) {
             System.out.println(e);
         }
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Character 1: \n").append(this.character1).append("\n");
+        sb.append("Character 2: \n").append(this.character2).append("\n");
+        return sb.toString().trim();
     }
 }
