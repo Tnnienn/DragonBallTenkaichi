@@ -1,25 +1,24 @@
 package it.develhope.dragonball.combat;
 
 import it.develhope.dragonball.characters.Character;
+import lombok.AllArgsConstructor;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
+@AllArgsConstructor
 public class Combat {
 
     private Character character1;
     private Character character2;
     private String path;
 
-    public Combat(Character character1, Character character2, String path) {
+    public Combat(Character character1, Character character2) {
         this.character1 = character1;
         this.character2 = character2;
-        this.path = path;
     }
-
-
 
     public void fight() {
         StringBuilder result = new StringBuilder();
@@ -61,10 +60,12 @@ public class Combat {
         result.append("----------------------------------\n\t\t\t").append(winner.getName()).append(" Wins\n----------------------------------\n");
         result.append("----------------------------------\n\t\t\t").append(loser.getName()).append(" Lost\n----------------------------------\n");
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
-            bw.write(result.toString());
-        } catch (IOException e) {
-            System.out.println(e);
+        if (this.path != null) {
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
+                bw.write(result.toString());
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 
@@ -72,6 +73,7 @@ public class Combat {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Character 1: \n").append(this.character1).append("\n");
+        sb.append("------------------------\n");
         sb.append("Character 2: \n").append(this.character2).append("\n");
         return sb.toString().trim();
     }

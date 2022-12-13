@@ -2,11 +2,13 @@ package it.develhope.dragonball.characters;
 
 import it.develhope.dragonball.attacks.Attack;
 import it.develhope.dragonball.attacks.PhysicalAttack;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+@Data
 public abstract class Character {
 
     protected String name;
@@ -40,32 +42,6 @@ public abstract class Character {
     public Character() {
 
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public Races getRace() {
-        return race;
-    }
-
-    public int getLifePoint() {
-        return lifePoint;
-    }
-
-    public int getStrength() {
-        return strength;
-    }
-
-    public double getDefenceRate() {
-        return defenceRate;
-    }
-
-    public double getDodgeRate() {
-        return dodgeRate;
-    }
-
-    public List<Attack> getAttackList() { return attackList; }
 
     public Attack choseAttack() {
         Random random = new Random();

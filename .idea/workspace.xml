@@ -4,10 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e424786-0cf8-442e-89cf-e64501a90eeb" name="Changes" comment="Update: bug fix">
+    <list default="true" id="2e424786-0cf8-442e-89cf-e64501a90eeb" name="Changes" comment="uodate readme.txt">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/projectlombok_lombok.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/dragonball/entities/Combat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DragonBall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DragonBall.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/Attack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/BigBangAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/BigBangAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/FinalFlash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/FinalFlash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/GalickCannon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/GalickCannon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Genkidama.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/Genkidama.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Kaioken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/Kaioken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Kamehameha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/Kamehameha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Makankosappo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/Makankosappo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Masenko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/Masenko.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/PhysicalAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/PhysicalAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/attacks/Taioken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/attacks/Taioken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/characters/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/CharacterSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/characters/CharacterSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Gohan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/characters/Gohan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Goku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/characters/Goku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Races.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/characters/Races.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/characters/Vegeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/characters/Vegeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/dragonball/combat/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/develhope/dragonball/combat/Combat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +54,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ea0a4ac3d1e134eff70ff7734dc8bbcfa3df3203" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,14 +73,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tnnienn/Scrivania&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/tnnienn/Scrivania",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="it.develhope.dragonball.attacks" />
@@ -70,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -125,7 +166,42 @@
       <option name="project" value="LOCAL" />
       <updated>1666367711387</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create results">
+      <created>1666638325090</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666638325090</updated>
+    </task>
+    <task id="LOCAL-00008" summary="delete readme.txt">
+      <created>1666638377624</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666638377624</updated>
+    </task>
+    <task id="LOCAL-00009" summary="uodate readme.txt">
+      <created>1666638528395</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666638528395</updated>
+    </task>
+    <task id="LOCAL-00010" summary="uodate readme.txt">
+      <created>1666638594289</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666638594289</updated>
+    </task>
+    <task id="LOCAL-00011" summary="uodate readme.txt">
+      <created>1666638642699</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666638642699</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +233,9 @@
     <MESSAGE value="Update: fixed bug in main" />
     <MESSAGE value="Update: tried to implement new logging system" />
     <MESSAGE value="Update: bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: bug fix" />
+    <MESSAGE value="Create results" />
+    <MESSAGE value="delete readme.txt" />
+    <MESSAGE value="uodate readme.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="uodate readme.txt" />
   </component>
 </project>

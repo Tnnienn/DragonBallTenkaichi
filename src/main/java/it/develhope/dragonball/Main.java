@@ -1,6 +1,5 @@
 package it.develhope.dragonball;
 
-import it.develhope.dragonball.characters.Character;
 import it.develhope.dragonball.characters.CharacterSelector;
 import it.develhope.dragonball.combat.Combat;
 import it.unibas.utilita.Console;
@@ -82,8 +81,22 @@ public class Main {
         System.out.println();
         characterSelector.printCharacterList();
         int secondCharacter = readLimitedInteger(0, characterSelector.size(), "Insert your choice --> ");
-        String path = readPath();
-        return new Combat(characterSelector.getCharacter(firstCharacter), characterSelector.getCharacter(secondCharacter), path);
+        System.out.println("Do you want to save the battle log?");
+        String choice = readChoice();
+        if (choice.equals("y")) {
+            String path = readPath();
+            return new Combat(characterSelector.getCharacter(firstCharacter), characterSelector.getCharacter(secondCharacter), path);
+        }
+        return new Combat(characterSelector.getCharacter(firstCharacter), characterSelector.getCharacter(secondCharacter));
+    }
+
+    private String readChoice() {
+        System.out.print("Insert your choice [Y/n] ---> ");
+        String choice = Console.leggiStringa().toLowerCase();
+        if(choice.equals("") || choice.equals("y")) {
+            return "y";
+        }
+        return "n";
     }
 
     private String readPath() {
